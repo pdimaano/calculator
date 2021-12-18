@@ -141,7 +141,7 @@ class Calculator {
     formatDisplay(number) {
         const stringNumber = number.toString();
         const integerDigits = parseFloat(stringNumber.split(".")[0]);
-        const decimalDigits = stringnumber.split(".")[1];
+        const decimalDigits = stringNumber.split(".")[1];
         let integerDisplay;
         if (isNaN(integerDigits) && this.currentResult !== "NaN") {
             integerDisplay = "";
@@ -217,13 +217,13 @@ const keyboardControls = (event) => {
     }
 };
 
-const numButtons = document.querySelectorAll("[data-number");
-const operatorButtons = document.querySelectorAll("[data-operator");
-const plusMinusButton = document.querySelector("[data-negative-positive");
-const clearButton = document.querySelector("[data-clear-last");
-const allClearButton = document.querySelector("[data-all-clear");
-const previousOperand = document.querySelector("[data-previous-operand");
-const currentOperand = document.querySelector("[data-current-operand");
+const numButtons = document.querySelectorAll("[data-number]");
+const operatorButtons = document.querySelectorAll("[data-operator]");
+const plusMinusButton = document.querySelector("[data-negative-positive]");
+const clearButton = document.querySelector("[data-clear-last]");
+const allClearButton = document.querySelector("[data-all-clear]");
+const previousOperand = document.querySelector("[data-prev-operand]");
+const currentOperand = document.querySelector("[data-current-operand]");
 
 const calc = new Calculator(previousOperand, currentOperand);
 
